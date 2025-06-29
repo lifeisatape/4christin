@@ -1,0 +1,58 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B21B6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#backgroundGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="520" cy="100" r="30" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="80" cy="320" r="25" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="550" cy="350" r="35" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Main content card -->
+  <rect x="80" y="80" width="440" height="240" rx="20" fill="url(#cardGradient)" filter="url(#glow)"/>
+  
+  <!-- Logo/Icon -->
+  <circle cx="160" cy="140" r="30" fill="#8B5CF6"/>
+  <text x="160" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white">📰</text>
+  
+  <!-- Title -->
+  <text x="220" y="135" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1a1a1a">Reframe Daily</text>
+  
+  <!-- Subtitle -->
+  <text x="220" y="155" font-family="Arial, sans-serif" font-size="14" fill="#4a5568">Your Daily Farcaster Update</text>
+  
+  <!-- Description -->
+  <text x="160" y="190" font-family="Arial, sans-serif" font-size="12" fill="#718096">Stay informed with the latest happenings in the</text>
+  <text x="160" y="205" font-family="Arial, sans-serif" font-size="12" fill="#718096">Farcaster ecosystem. Curated insights & updates.</text>
+  
+  <!-- CTA Button -->
+  <rect x="160" y="235" width="160" height="40" rx="20" fill="#8B5CF6"/>
+  <text x="240" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">📰 Subscribe Now</text>
+  
+  <!-- Decorative elements -->
+  <path d="M 350 160 Q 380 140 410 160 Q 440 180 470 160" stroke="rgba(139,92,246,0.3)" stroke-width="2" fill="none"/>
+  <path d="M 360 180 Q 390 200 420 180 Q 450 160 480 180" stroke="rgba(139,92,246,0.2)" stroke-width="2" fill="none"/>
+  
+  <!-- Mini icons -->
+  <text x="370" y="145" font-family="Arial, sans-serif" font-size="16" fill="rgba(139,92,246,0.6)">📈</text>
+  <text x="400" y="165" font-family="Arial, sans-serif" font-size="16" fill="rgba(139,92,246,0.6)">🔥</text>
+  <text x="430" y="145" font-family="Arial, sans-serif" font-size="16" fill="rgba(139,92,246,0.6)">📊</text>
+</svg>
